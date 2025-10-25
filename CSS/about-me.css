@@ -9,3 +9,21 @@ body {
   object-fit: cover;
   margin-bottom: 20px;
 }
+
+.bg-head2 {
+  background-color: #f5ac96;
+  color: white;
+  padding: 50px ;
+  text-align: center;
+}
+
+.bg-head {
+  background-color: #f9eec6;
+  color: white;
+  padding: 50px ;
+  text-align: center;
+}
+
+.brown-text {
+  color: rgb(112, 78, 24);
+}

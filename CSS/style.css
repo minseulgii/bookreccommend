@@ -1,7 +1,3 @@
-    .costom-bg {
-        background-color: #dfe8f1;
-    }
-
     .sriracha-regular {
         font-family: "Sriracha", cursive;
         font-weight: 400;
@@ -11,5 +7,104 @@
     .custom-color {
         color: #bb2c1c;
         border: 50px
-        
+    }
+
+    .bg-head {
+        background-color: #fcf0ed;
+        color: white;
+        padding: 50px;
+        text-align: center;
+    }
+
+    .bg-head2 {
+        background-color: #fef1d8;
+        color: white;
+        padding: 50px;
+        text-align: center;
+    }
+
+    .bg-rec img {
+        margin-left: 0px;
+        /* ปรับค่านี้ตามความชอบ เพื่อขยับออกซ้าย */
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        /* เงานุ่ม ๆ */
+        border-radius: 12px;
+        /* มุมโค้งมน */
+        transition: all 0.3s ease;
+        /* ให้เงาและมุมค่อย ๆ เปลี่ยนเวลาฮัวร์ */
+    }
+
+    .brown-text {
+        color: rgb(116, 83, 29);
+    }
+
+    .highlight-text {
+        color: #ffa12e;
+        /* เปลี่ยนเป็นสีที่คุณต้องการ */
+    }
+
+    .story-text {
+        font-family: 'Mitr', sans-serif;
+        font-weight: 400;
+        font-size: 1.1rem;
+        text-indent: 2em;
+        line-height: 1.9;
+        text-align: justify;
+        margin-bottom: 0;
+    }
+
+    /* ทำให้ฟ้อนต์และขนาดปรับตามจอ */
+    @media (max-width: 768px) {
+        .story-text {
+            font-size: 1rem;
+            line-height: 1.7;
+            text-indent: 1.5em;
+            padding-right: 10px;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+        }
+    }
+
+    .carousel-inner img {
+        border-radius: 15px;
+        /* มุมโค้งนิด ๆ */
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        /* เงานุ่มเหมือนลอยขึ้น */
+        transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    /* เพิ่มเอฟเฟกต์ขยับเล็กน้อยเวลาเมาส์ชี้ */
+    .carousel-inner img:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+    }
+
+    .bg-rec img {
+        transition: transform 0.4s ease, box-shadow 0.4s ease;
+        /* ทำให้ขยับนุ่ม */
+    }
+
+    .bg-rec img:hover {
+        transform: translateY(-10px) scale(1.05);
+        /* เด้งขึ้น + ขยายเล็กน้อย */
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+        /* เพิ่มเงาให้ดูมีมิติ */
+    }
+
+    /* สีหัวข้อตอนกางอยู่ */
+    .accordion-button {
+        background-color: #ffc9c3;
+        /* เปลี่ยนเป็นสีชมพูอ่อนตามชอบ */
+        color: #000;
+        /* สีตัวอักษร */
+    }
+
+    /* สีหัวข้อตอนพับ */
+    .accordion-button.collapsed {
+        background-color: #fcf1b4;
+        /* สีชมพูอ่อนอีกแบบ */
+        color: #5c3b0d;
+        /* สีตัวอักษรตอนพับ */
     }
